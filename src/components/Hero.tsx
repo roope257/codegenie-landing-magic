@@ -14,7 +14,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-              Cod <span className="gradient-text">Faster and Smarter</span> with CodeGenie
+              Code <span className="gradient-text">Faster and Smarter</span> with CodeGenie
             </h1>
             
             <p className="text-lg text-gray-600 max-w-2xl">
