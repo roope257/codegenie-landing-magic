@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Zap } from "lucide-react";
 
@@ -15,7 +14,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-              Code <span className="gradient-text">Faster and Smarter</span> with CodeGenie
+              Cod <span className="gradient-text">Faster and Smarter</span> with CodeGenie
             </h1>
             
             <p className="text-lg text-gray-600 max-w-2xl">
@@ -23,13 +22,17 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="gradient-bg text-base">
-                Try for Free
-                <ArrowRight size={16} className="ml-2" />
-              </Button>
-              <Button size="lg" variant="outline" className="text-base">
-                View Demo <Code size={16} className="ml-2" />
-              </Button>
+              <a href="/signup" className="inline-block">
+                <Button size="lg" className="gradient-bg text-base">
+                  Try for Free
+                  <ArrowRight size={16} className="ml-2" />
+                </Button>
+              </a>
+              <a href="/demo" className="inline-block">
+                <Button size="lg" variant="outline" className="text-base">
+                  View Demo <Code size={16} className="ml-2" />
+                </Button>
+              </a>
             </div>
             
             <div className="flex items-center pt-4">
