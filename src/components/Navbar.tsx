@@ -7,7 +7,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="py-4 border-b border-gray-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
+    <nav className="py-4 glass-nav sticky top-0 z-50">
       <div className="container-custom flex justify-between items-center">
         <div className="flex items-center">
           <a href="#" className="flex items-center space-x-2">
@@ -39,25 +39,25 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-b border-gray-200 py-4 px-4 shadow-md z-50">
+        <div className="md:hidden absolute top-16 left-0 right-0 glass-medium py-4 px-4 z-50">
           <div className="flex flex-col space-y-4">
             <a 
               href="#features" 
-              className="text-gray-600 hover:text-green-600 transition-colors py-2"
+              className="text-gray-700 hover:text-green-600 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Features
             </a>
             <a 
               href="#testimonials" 
-              className="text-gray-600 hover:text-green-600 transition-colors py-2"
+              className="text-gray-700 hover:text-green-600 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Testimonials
             </a>
             <a 
               href="#join" 
-              className="text-gray-600 hover:text-green-600 transition-colors py-2"
+              className="text-gray-700 hover:text-green-600 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Join Waitlist
