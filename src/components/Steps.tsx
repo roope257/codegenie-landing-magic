@@ -15,14 +15,14 @@ const StepCard = ({
 }) => (
   <div className="relative text-center">
     {/* Combined number and icon container */}
-    <div className="mx-auto mb-6 relative">
+    <div className="mx-auto mb-6 relative flex items-center justify-center">
       {/* Main gradient circle with number */}
-      <div className="h-20 w-20 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-2xl shadow-lg relative z-10 mx-auto">
+      <div className="h-20 w-20 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-2xl shadow-lg relative z-10">
         {number}
       </div>
       
-      {/* Icon positioned at bottom right of circle */}
-      <div className="absolute -bottom-1 -right-1 h-10 w-10 rounded-full bg-white shadow-lg flex items-center justify-center border-2 border-green-100 z-20">
+      {/* Icon positioned next to the circle with slight overlap */}
+      <div className="absolute -right-2 h-10 w-10 rounded-full bg-white shadow-lg flex items-center justify-center border-2 border-green-100 z-20">
         {icon}
       </div>
     </div>
