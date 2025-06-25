@@ -1,5 +1,7 @@
-import { Button } from "@/components/ui/button";
+
 import { ArrowRight, Code, Zap } from "lucide-react";
+import GradientButton from "@/components/ui/GradientButton";
+import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
@@ -23,10 +25,10 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="/signup" className="inline-block">
-                <Button size="lg" className="gradient-bg text-base">
+                <GradientButton size="lg" className="text-base">
                   Try for Free
                   <ArrowRight size={16} className="ml-2" />
-                </Button>
+                </GradientButton>
               </a>
               <a href="/demo" className="inline-block">
                 <Button size="lg" variant="outline" className="text-base">

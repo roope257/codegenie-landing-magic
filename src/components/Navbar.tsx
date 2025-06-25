@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import GradientButton from "@/components/ui/GradientButton";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -25,12 +25,13 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Button className="gradient-bg">Try for Free</Button>
+          <GradientButton>Try for Free</GradientButton>
         </div>
 
         <button 
           className="md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle mobile menu"
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -61,7 +62,7 @@ const Navbar = () => {
             >
               Join Waitlist
             </a>
-            <Button className="gradient-bg w-full">Try for Free</Button>
+            <GradientButton className="w-full">Try for Free</GradientButton>
           </div>
         </div>
       )}
