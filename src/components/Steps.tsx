@@ -75,18 +75,18 @@ const Steps = () => {
           </div>
         ))}
         
-        {/* Connecting lines - positioned behind circles, from edge to edge */}
+        {/* Connecting lines - positioned behind circles, from edge to edge with sharp edges and soft middle */}
         <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 pointer-events-none z-0">
           <div className="flex items-center h-full max-w-5xl mx-auto">
             {/* First line: from first circle to second circle */}
             <div className="flex-1 flex justify-end pr-6">
-              <div className="w-32 h-0.5 bg-gradient-to-r from-green-200 to-emerald-200"></div>
+              <div className="w-32 h-0.5 bg-gradient-to-r from-green-500 via-green-200/50 to-green-500"></div>
             </div>
             {/* Space for second circle */}
             <div className="w-16"></div>
             {/* Second line: from second circle to third circle */}
             <div className="flex-1 flex justify-start pl-6">
-              <div className="w-32 h-0.5 bg-gradient-to-r from-green-200 to-emerald-200"></div>
+              <div className="w-32 h-0.5 bg-gradient-to-r from-green-500 via-green-200/50 to-green-500"></div>
             </div>
           </div>
         </div>
