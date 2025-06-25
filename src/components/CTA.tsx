@@ -32,11 +32,8 @@ const CTA = () => {
       <div className="absolute -bottom-48 -left-48 w-96 h-96 bg-emerald-200 rounded-full filter blur-3xl opacity-20"></div>
       
       <div className="max-w-5xl mx-auto relative">
-        <div className="bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl shadow-xl overflow-hidden relative">
-          {/* Glass overlay on the gradient */}
-          <div className="absolute inset-0 glass-light rounded-2xl"></div>
-          
-          <div className="px-6 py-12 md:p-12 text-center text-white relative z-10">
+        <div className="bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl shadow-xl overflow-hidden">
+          <div className="px-6 py-12 md:p-12 text-center text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Join Our Waitlist Today
             </h2>
@@ -56,7 +53,7 @@ const CTA = () => {
                 <Input
                   type="email"
                   placeholder="Enter your email"
-                  className="pl-10 bg-white/90 backdrop-blur-sm border-0 text-gray-800 focus:ring-2 focus:ring-white"
+                  className="pl-10 bg-white border-0 text-gray-800 focus:ring-2 focus:ring-white"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -65,7 +62,7 @@ const CTA = () => {
               </div>
               <GradientButton 
                 type="submit" 
-                className="bg-white text-green-600 hover:bg-white/90 backdrop-blur-sm"
+                className="bg-white text-green-600 hover:bg-green-50"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Joining..." : "Join Waitlist"}
