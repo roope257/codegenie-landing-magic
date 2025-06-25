@@ -15,7 +15,7 @@ const StepCard = ({
 }) => (
   <div className="relative text-center">
     {/* Step number with gradient background */}
-    <div className="mx-auto mb-6 h-16 w-16 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl shadow-lg">
+    <div className="mx-auto mb-6 h-16 w-16 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl shadow-lg relative z-10">
       {number}
     </div>
     
@@ -75,8 +75,8 @@ const Steps = () => {
           </div>
         ))}
         
-        {/* Connecting lines - positioned below the circles */}
-        <div className="hidden md:block absolute top-16 left-0 w-full h-0.5 pointer-events-none">
+        {/* Connecting lines - positioned behind the circles */}
+        <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 pointer-events-none z-0">
           <div className="flex justify-between items-center h-full max-w-5xl mx-auto px-8">
             <div className="flex-1 h-0.5 bg-gradient-to-r from-green-200 to-emerald-200 mx-8"></div>
             <div className="flex-1 h-0.5 bg-gradient-to-r from-green-200 to-emerald-200 mx-8"></div>
