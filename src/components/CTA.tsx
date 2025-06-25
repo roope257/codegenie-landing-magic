@@ -60,13 +60,13 @@ const CTA = () => {
                   aria-label="Email address"
                 />
               </div>
-              <GradientButton 
-                type="submit" 
-                className="bg-white text-green-600 hover:bg-green-50"
+              <button
+                type="submit"
+                className="bg-white text-green-600 hover:bg-gray-50 hover:text-green-700 font-medium px-6 py-2 rounded-md transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Joining..." : "Join Waitlist"}
-              </GradientButton>
+              </button>
             </form>
             
             <p className="text-sm opacity-80 mt-4">
