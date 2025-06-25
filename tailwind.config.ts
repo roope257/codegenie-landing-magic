@@ -66,23 +66,23 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				blue: {
-					100: "#DBEAFE",
-					200: "#BFDBFE",
-					300: "#93C5FD",
-					400: "#60A5FA",
-					500: "#3B82F6",
-					600: "#2563EB",
-					700: "#1D4ED8",
+				green: {
+					100: "#DCFCE7",
+					200: "#BBF7D0",
+					300: "#86EFAC",
+					400: "#4ADE80",
+					500: "#22C55E",
+					600: "#16A34A",
+					700: "#15803D",
 				},
-				purple: {
-					100: "#EDE9FE",
-					200: "#DDD6FE",
-					300: "#C4B5FD",
-					400: "#A78BFA",
-					500: "#8B5CF6",
-					600: "#7C3AED",
-					700: "#6D28D9",
+				emerald: {
+					100: "#D1FAE5",
+					200: "#A7F3D0",
+					300: "#6EE7B7",
+					400: "#34D399",
+					500: "#10B981",
+					600: "#059669",
+					700: "#047857",
 				},
 			},
 			borderRadius: {
@@ -109,8 +109,8 @@ export default {
 				}
 			},
 			animation: {
-				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
+				'accordion-down': 'accordion-down 0.2s ease-out forwards',
+				'accordion-up': 'accordion-up 0.2s ease-out forwards',
 				'fade-in': 'fade-in 0.5s ease-out forwards',
 				'float': 'float 3s ease-in-out infinite'
 			}

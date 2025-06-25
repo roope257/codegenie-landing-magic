@@ -19,9 +19,9 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
-          <a href="#testimonials" className="text-gray-600 hover:text-blue-600 transition-colors">Testimonials</a>
-          <a href="#join" className="text-gray-600 hover:text-blue-600 transition-colors">Join Waitlist</a>
+          <a href="#features" className="text-gray-600 hover:text-green-600 transition-colors">Features</a>
+          <a href="#testimonials" className="text-gray-600 hover:text-green-600 transition-colors">Testimonials</a>
+          <a href="#join" className="text-gray-600 hover:text-green-600 transition-colors">Join Waitlist</a>
         </div>
 
         <div className="hidden md:block">
@@ -43,21 +43,21 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4">
             <a 
               href="#features" 
-              className="text-gray-600 hover:text-blue-600 transition-colors py-2"
+              className="text-gray-600 hover:text-green-600 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Features
             </a>
             <a 
               href="#testimonials" 
-              className="text-gray-600 hover:text-blue-600 transition-colors py-2"
+              className="text-gray-600 hover:text-green-600 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Testimonials
             </a>
             <a 
               href="#join" 
-              className="text-gray-600 hover:text-blue-600 transition-colors py-2"
+              className="text-gray-600 hover:text-green-600 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Join Waitlist
