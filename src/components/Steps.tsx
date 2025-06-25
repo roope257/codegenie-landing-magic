@@ -14,14 +14,17 @@ const StepCard = ({
   description: string;
 }) => (
   <div className="relative text-center">
-    {/* Step number with gradient background */}
-    <div className="mx-auto mb-6 h-16 w-16 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl shadow-lg relative z-10">
-      {number}
-    </div>
-    
-    {/* Icon */}
-    <div className="mx-auto mb-4 h-12 w-12 rounded-lg bg-green-50 flex items-center justify-center">
-      {icon}
+    {/* Combined number and icon container */}
+    <div className="mx-auto mb-6 relative">
+      {/* Main gradient circle with number */}
+      <div className="h-20 w-20 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-2xl shadow-lg relative z-10 mx-auto">
+        {number}
+      </div>
+      
+      {/* Icon positioned at bottom right of circle */}
+      <div className="absolute -bottom-1 -right-1 h-10 w-10 rounded-full bg-white shadow-lg flex items-center justify-center border-2 border-green-100 z-20">
+        {icon}
+      </div>
     </div>
     
     {/* Content */}
@@ -34,19 +37,19 @@ const Steps = () => {
   const steps = [
     {
       number: "1",
-      icon: <Code size={24} className="text-green-600" />,
+      icon: <Code size={20} className="text-green-600" />,
       title: "Write Your Code",
       description: "Start coding as usual in your favorite editor. CodeGenie works seamlessly with your existing workflow."
     },
     {
       number: "2", 
-      icon: <Zap size={24} className="text-green-600" />,
+      icon: <Zap size={20} className="text-green-600" />,
       title: "AI Analysis",
       description: "Our AI analyzes your code in real-time, identifying potential improvements and optimization opportunities."
     },
     {
       number: "3",
-      icon: <CheckCircle size={24} className="text-green-600" />,
+      icon: <CheckCircle size={20} className="text-green-600" />,
       title: "Get Suggestions",
       description: "Receive intelligent suggestions to improve performance, fix bugs, and enhance code quality instantly."
     }
@@ -75,18 +78,18 @@ const Steps = () => {
           </div>
         ))}
         
-        {/* Connecting lines - positioned behind circles, from edge to edge */}
-        <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 pointer-events-none z-0">
+        {/* Connecting lines between circles */}
+        <div className="hidden md:block absolute top-10 left-0 w-full h-0.5 pointer-events-none z-0">
           <div className="flex items-center h-full max-w-5xl mx-auto">
             {/* First line: from first circle to second circle */}
-            <div className="flex-1 flex justify-end pr-6">
-              <div className="w-32 h-0.5 bg-gradient-to-r from-green-200 to-emerald-200"></div>
+            <div className="flex-1 flex justify-end pr-10">
+              <div className="w-24 h-0.5 bg-gradient-to-r from-green-600 via-green-300 to-green-600"></div>
             </div>
             {/* Space for second circle */}
-            <div className="w-16"></div>
+            <div className="w-20"></div>
             {/* Second line: from second circle to third circle */}
-            <div className="flex-1 flex justify-start pl-6">
-              <div className="w-32 h-0.5 bg-gradient-to-r from-green-200 to-emerald-200"></div>
+            <div className="flex-1 flex justify-start pl-10">
+              <div className="w-24 h-0.5 bg-gradient-to-r from-green-600 via-green-300 to-green-600"></div>
             </div>
           </div>
         </div>
