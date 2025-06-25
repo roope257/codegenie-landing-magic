@@ -63,7 +63,7 @@ const Steps = () => {
         </p>
       </div>
       
-      <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto relative">
         {steps.map((step, index) => (
           <div key={index} className="relative">
             <StepCard 
@@ -72,14 +72,16 @@ const Steps = () => {
               title={step.title}
               description={step.description}
             />
-            
-            {/* Connecting line (hidden on mobile, shown on desktop) */}
-            {index < steps.length - 1 && (
-              <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-green-200 to-emerald-200 z-0" 
-                   style={{ width: 'calc(100% - 2rem)', left: '2rem' }} />
-            )}
           </div>
         ))}
+        
+        {/* Connecting lines - positioned absolutely to connect the circles */}
+        <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 pointer-events-none">
+          <div className="flex justify-between items-center h-full max-w-5xl mx-auto px-8">
+            <div className="flex-1 h-0.5 bg-gradient-to-r from-green-200 to-emerald-200 mx-8"></div>
+            <div className="flex-1 h-0.5 bg-gradient-to-r from-green-200 to-emerald-200 mx-8"></div>
+          </div>
+        </div>
       </div>
     </SectionContainer>
   );
