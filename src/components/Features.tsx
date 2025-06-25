@@ -1,6 +1,6 @@
 
 import SectionContainer from "@/components/ui/SectionContainer";
-import { features } from "@/constants/features";
+import { featuresData, iconMap } from "@/constants/features";
 import { Feature } from "@/types";
 
 const FeatureCard = ({ 
@@ -18,6 +18,15 @@ const FeatureCard = ({
 );
 
 const Features = () => {
+  const features = featuresData.map(feature => {
+    const IconComponent = iconMap[feature.iconName as keyof typeof iconMap];
+    return {
+      icon: <IconComponent size={24} className="text-white" />,
+      title: feature.title,
+      description: feature.description,
+    };
+  });
+
   return (
     <SectionContainer id="features" className="bg-gray-50">
       <div className="text-center mb-16">

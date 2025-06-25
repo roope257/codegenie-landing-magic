@@ -1,25 +1,22 @@
 
-import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
-import { SocialLink } from "@/types";
-
-export const socialLinks: SocialLink[] = [
+export const socialLinksData = [
   {
-    icon: <Twitter size={20} />,
+    iconName: "Twitter",
     href: "#",
     label: "Twitter",
   },
   {
-    icon: <Github size={20} />,
+    iconName: "Github",
     href: "#",
     label: "GitHub",
   },
   {
-    icon: <Linkedin size={20} />,
+    iconName: "Linkedin",
     href: "#",
     label: "LinkedIn",
   },
   {
-    icon: <Instagram size={20} />,
+    iconName: "Instagram",
     href: "#",
     label: "Instagram",
   },
