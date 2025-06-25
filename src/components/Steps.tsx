@@ -75,8 +75,8 @@ const Steps = () => {
           </div>
         ))}
         
-        {/* Connecting lines - positioned absolutely to connect the circles */}
-        <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 pointer-events-none">
+        {/* Connecting lines - positioned below the circles */}
+        <div className="hidden md:block absolute top-16 left-0 w-full h-0.5 pointer-events-none">
           <div className="flex justify-between items-center h-full max-w-5xl mx-auto px-8">
             <div className="flex-1 h-0.5 bg-gradient-to-r from-green-200 to-emerald-200 mx-8"></div>
             <div className="flex-1 h-0.5 bg-gradient-to-r from-green-200 to-emerald-200 mx-8"></div>
